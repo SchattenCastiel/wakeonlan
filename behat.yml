@@ -1,0 +1,12 @@
+default:
+    suites:
+        wake-on-lan:
+            paths: [ tests/Behat/Features/WakeOnLan/wake-on-lan.feature ]
+            contexts:
+                - App\Tests\Behat\Contexts\WakeOnLan\WakeOnLanControllerContext
+
+    extensions:
+        FriendsOfBehat\SymfonyExtension:
+            bootstrap: tests/bootstrap.php
+            kernel:
+                environment: test
