@@ -25,7 +25,7 @@ class WakeOnLanControllerContext extends WebTestCase implements Context
     #[When('I run the command with mac address :mac and broadcast address :broadcastAddress')]
     public function iRunTheCommandWithMacAddressAndBroadcastAddress(string $mac, string $broadcastAddress): void
     {
-        $crawler = $this->client->request(
+        $this->client->request(
             'POST',
             '/network/lan/wake',
             array(),

@@ -29,3 +29,8 @@ curl --header "Content-Type: application/json" \
   --data '{"mac":"00:00:00:00:00","broadcast":"192.168.177.255"}' \
   http://localhost:3000/network/lan/wake
 ```
+
+### Install missing program to run the wakeonlan command
+```bash
+sudo apt install wakeonlan -y
+```
